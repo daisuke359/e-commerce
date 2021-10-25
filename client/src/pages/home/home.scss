@@ -1,0 +1,73 @@
+@import "../../utils/variables";
+
+@mixin btn {
+    letter-spacing: 1px;
+    font-size: 0.6rem;
+    background-color: $color_dark;
+    color: #fff;
+    padding: 13px 25px;
+    cursor: pointer;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.main {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('../../images/main_bg.jpg');
+    background-position: center;
+    background-size: cover;
+
+    h2 {
+        font-size: 2.4rem;
+        font-weight: 400;
+        margin-bottom: 80px;
+    }
+
+    .link_shop {
+        @include btn();
+        text-decoration: none;
+        margin-bottom: 140px;
+    }
+
+    .sub_from {
+        background-color: #fff;
+        display: flex;
+        padding: 5px;
+        width: 40%;
+        margin: 0 auto;
+        justify-content: space-between;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+
+        input {
+            color: $color_dark;
+            padding: 12px 5px;
+            border: none;
+            flex: 1;
+            outline: none;
+
+            &:hover {
+                outline: none;
+            }
+        }
+
+        button {
+            @include btn();
+            border: none;
+            flex: 0 0 90px;
+
+        }
+    }
+}
+

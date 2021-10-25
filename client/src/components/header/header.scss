@@ -1,0 +1,45 @@
+@import "../../utils/variables";
+@mixin link {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.header {
+    width: 100%;
+    border-bottom: 1px solid #f3f3f3;
+}
+
+.header_nav {
+    max-width: 1180px;
+    color: $color_dark;
+    display: flex;
+    align-items: center;
+    padding: 20px 50px;
+    margin: 0 auto;
+    
+    .header_logo_container {
+        flex: 1;
+        font-size: 1.8rem;
+
+        .header_logo {
+            @include link();
+            color: $color_dark;
+        }
+    }
+
+    .nav_list {
+        display: flex;
+        flex: 0 0 380px;
+        justify-content: space-between;
+
+        .nav_item {
+            list-style-type: none;
+            font-size: 0.8rem;
+
+            .item_link {
+                @include link();
+                color: $color_dark;
+            }
+        }
+    }
+}
