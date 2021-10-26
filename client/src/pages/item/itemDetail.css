@@ -1,0 +1,97 @@
+.item_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #656565;
+  width: 90%;
+  max-width: 1180px;
+  margin: 0 auto 60px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.item_container .item_img_container {
+  -webkit-box-flex: 0.6;
+      -ms-flex: 0.6;
+          flex: 0.6;
+}
+
+.item_container .item_img_container img {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.item_container .item_info {
+  margin-top: 50px;
+  -webkit-box-flex: 0.4;
+      -ms-flex: 0.4;
+          flex: 0.4;
+  text-align: center;
+}
+
+.item_container .item_info h3 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+.item_container .item_info h4 {
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.item_container .item_info .item_sizes {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.item_container .item_info .item_sizes .item_size {
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.item_container .item_info .item_sizes .item_size:first-child {
+  border: 1px solid #656565;
+  padding: 8px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.item_container .item_info .item_add {
+  cursor: pointer;
+  margin-bottom: 60px;
+  width: 80%;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #656565;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+}
+
+.item_container .item_info .item_add:hover {
+  background-color: #656565;
+  color: white;
+}
+
+.item_container .item_info .item_desc {
+  text-align: left;
+  font-size: 0.8rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.item_container .item_info .item_desc p {
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=itemDetail.css.map */

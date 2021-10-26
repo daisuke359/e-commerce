@@ -1,0 +1,17 @@
+.footer {
+  padding: 40px 0;
+}
+
+.footer .footer_list {
+  cursor: pointer;
+  color: #656565;
+  font-size: 0.7rem;
+  width: 800px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+/*# sourceMappingURL=footer.css.map */

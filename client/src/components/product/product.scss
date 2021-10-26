@@ -1,7 +1,9 @@
+@import "../../utils/variables";
+
 .product {
     width: 32%;
     max-width: 400px;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: $product_bg;
     cursor: pointer;
     margin-bottom: 20px;
 

@@ -1,6 +1,6 @@
 .collection_main {
   width: 90%;
-  margin: 60px auto;
+  margin: 0 auto 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

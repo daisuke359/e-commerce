@@ -1,0 +1,87 @@
+@import "../../utils/variables";
+
+.item_container {
+    display: flex;
+    color: $color_dark;
+    width: 90%;
+    max-width: 1180px;
+    margin: 0 auto 60px;
+    justify-content: space-around;
+    align-items:flex-start;
+
+    .item_img_container {
+        flex: 0.6;
+
+        img {
+            width: 100%;
+            background-color: $product_bg;
+        }
+    }
+
+    .item_info {
+        margin-top: 50px;
+        flex: 0.4;
+        text-align: center;
+
+        h3 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            letter-spacing: 1px;
+        }
+
+        h4 {
+            letter-spacing: 1px;
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .item_sizes {
+            width: 100%;
+            margin-bottom: 30px;
+            .item_size {
+                cursor: pointer;
+                display: inline-block;
+                margin-right: 30px;
+
+                &:first-child {
+                    border: 1px solid $color_dark;
+                    padding: 8px;
+                    border-radius: 3px;
+                    -webkit-border-radius: 3px;
+                    -moz-border-radius: 3px;
+                    -ms-border-radius: 3px;
+                    -o-border-radius: 3px;
+                }
+            }
+        }
+
+        .item_add {
+            cursor: pointer;
+            margin-bottom: 60px;
+            width: 80%;
+            background-color: #fff;
+            padding: 10px;
+            border: 1px solid $color_dark;
+            transition: all 0.2s ease;
+            -webkit-transition: all 0.2s ease;
+            -moz-transition: all 0.2s ease;
+            -ms-transition: all 0.2s ease;
+            -o-transition: all 0.2s ease;
+            &:hover {
+                background-color: $color_dark;
+                color: white;
+            }
+        }
+
+        .item_desc {
+            text-align: left;
+            font-size: 0.8rem;
+            width: 80%;
+            margin: 0 auto;
+
+            p {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

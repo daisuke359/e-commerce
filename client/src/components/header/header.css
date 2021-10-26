@@ -1,6 +1,7 @@
 .header {
   width: 100%;
   border-bottom: 1px solid #f3f3f3;
+  margin-bottom: 80px;
 }
 
 .header_nav {

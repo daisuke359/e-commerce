@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,QAAQ,CAAC;EACL,KAAK,EAAE,GAAG;EACV,SAAS,EAAE,KAAK;EAChB,gBAAgB,EAAE,kBAAkB;EACpC,MAAM,EAAE,OAAO;EACf,aAAa,EAAE,IAAI;CAKtB;;AAVD,AAOI,QAPI,CAOJ,GAAG,CAAC;EACA,KAAK,EAAE,IAAI;CACd",
+    "mappings": "AAEA,AAAA,QAAQ,CAAC;EACL,KAAK,EAAE,GAAG;EACV,SAAS,EAAE,KAAK;EAChB,gBAAgB,ECJP,kBAAkB;EDK3B,MAAM,EAAE,OAAO;EACf,aAAa,EAAE,IAAI;CAKtB;;AAVD,AAOI,QAPI,CAOJ,GAAG,CAAC;EACA,KAAK,EAAE,IAAI;CACd",
     "sources": [
-        "product.scss"
+        "product.scss",
+        "../../utils/_variables.scss"
     ],
     "names": [],
     "file": "product.css"
