@@ -1,6 +1,7 @@
 @import "../../utils/variables";
 
 .product {
+    position: relative;
     width: 32%;
     max-width: 400px;
     background-color: $product_bg;
@@ -9,5 +10,16 @@
 
     img {
         width: 100%;
+    }
+
+    .product_price {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 10px 15px;
+        background-color: $color_dark;
+        color: #fff;
+        letter-spacing: 1px;
+        font-size: 0.8rem;
     }
 }

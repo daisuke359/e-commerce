@@ -8,6 +8,7 @@ export default function Product({product}) {
             <Link to={`/collection/${product.id}`}>
                 <img src={product.img} alt="" />
             </Link>
+            <div className="product_price"><span>${product.price}</span></div>
         </div>
     )
 }

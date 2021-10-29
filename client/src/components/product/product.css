@@ -1,4 +1,5 @@
 .product {
+  position: relative;
   width: 32%;
   max-width: 400px;
   background-color: rgba(0, 0, 0, 0.1);
@@ -8,5 +9,16 @@
 
 .product img {
   width: 100%;
+}
+
+.product .product_price {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px 15px;
+  background-color: #656565;
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
 }
 /*# sourceMappingURL=product.css.map */

@@ -8,9 +8,7 @@ import "./itemDetail.css";
 export default function ItemDetail() {
 
     const id = useParams().id;
-    const item = products.find(p => p.id == id);
-
-    console.log(item);
+    const item = products.find(p => p.id === parseInt(id));
 
     return (
         <>
@@ -47,15 +45,3 @@ export default function ItemDetail() {
         </>
     )
 }
-
-
-/*
-
-
-
-
-
-
-
-
-*/

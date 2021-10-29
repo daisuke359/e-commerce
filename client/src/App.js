@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import Collection from './pages/collection/Collection';
 import ItemDetail from './pages/item/ItemDetail';
+import Cart from './pages/cart/Cart';
 
 
 function App() {
@@ -16,6 +17,9 @@ function App() {
       <Switch>
         <Route exact path="/">
           <Home/>
+        </Route>
+        <Route path="/cart">
+          <Cart/>
         </Route>
         <Route path="/collection/all">
           <Collection/>

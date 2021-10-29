@@ -1,0 +1,104 @@
+.cart {
+  color: #656565;
+  max-width: 1180px;
+  padding: 0 50px;
+  margin: 0 auto;
+}
+
+.cart .cart_title {
+  font-size: 1.6rem;
+  margin-bottom: 40px;
+}
+
+.cart .cart_item_container {
+  border-top: 1px solid #f3f3f3;
+  border-bottom: 1px solid #f3f3f3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 80px;
+}
+
+.cart_item {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cart_item .cart_item_img {
+  -webkit-box-flex: 0.3;
+      -ms-flex: 0.3;
+          flex: 0.3;
+}
+
+.cart_item .cart_item_img img {
+  max-width: 40%;
+}
+
+.cart_item .cart_item_info {
+  -webkit-box-flex: 0.7;
+      -ms-flex: 0.7;
+          flex: 0.7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cart_item_info_right {
+  -webkit-box-flex: 0.4;
+      -ms-flex: 0.4;
+          flex: 0.4;
+}
+
+.cart_item_info_right .cart_item_name {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.cart_item_info_right .cart_item_size {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.cart_item_info_right .cart_item_remove {
+  cursor: pointer;
+  border: none;
+  background-color: #fff;
+  color: #f3f3f3;
+  padding: 0;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+}
+
+.cart_item_info_right .cart_item_remove:hover {
+  border-bottom: 1px solid #656565;
+  color: #656565;
+}
+
+.cart_item_info_left {
+  -webkit-box-flex: 0.6;
+      -ms-flex: 0.6;
+          flex: 0.6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+/*# sourceMappingURL=cart.css.map */
