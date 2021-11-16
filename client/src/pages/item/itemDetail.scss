@@ -36,23 +36,36 @@
         }
 
         .item_sizes {
+            display: flex;
+            justify-content: space-evenly;
             width: 100%;
             margin-bottom: 30px;
-            .item_size {
-                cursor: pointer;
-                display: inline-block;
-                margin-right: 30px;
+        }
 
-                &:first-child {
-                    border: 1px solid $color_dark;
-                    padding: 8px;
-                    border-radius: 3px;
-                    -webkit-border-radius: 3px;
-                    -moz-border-radius: 3px;
-                    -ms-border-radius: 3px;
-                    -o-border-radius: 3px;
-                }
+        .item_size_container {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .item_size_label {
+                cursor: pointer;
             }
+
+            .item_size {
+                display: none;
+                margin: 0;
+                width: 0px;
+                border-radius: 0px;
+            }
+            border-radius: 3px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            -ms-border-radius: 3px;
+            -o-border-radius: 3px;
         }
 
         .item_add {
