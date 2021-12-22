@@ -14,7 +14,7 @@ export default function Cart() {
         <Header/>
         <div className="cart">
             <div className="cart_title">
-                <h3>Your Cart</h3>
+                <h3>Your Cart ({cart.length})</h3>
             </div>
             <div className="cart_item_container">
                 {cart.map((item, index) => (

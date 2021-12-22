@@ -15,10 +15,6 @@ export default function ItemDetail() {
 
     const [itemSize, setItemSize] = useState("xs");
 
-    const handleClick = (size) => {
-        setItemSize(size);
-    }
-
     const handleChange = () => {
         console.log(itemSize);
     }
@@ -40,23 +36,23 @@ export default function ItemDetail() {
                             <h3>{item.name}</h3>
                             <h4>${item.price}</h4>
                             <div className="item_sizes">
-                                <div onClick={() => handleClick("xs")} className="item_size_container" style={{ border: itemSize === "xs" ? '1px solid black': 'none'}}>
+                                <div onClick={() => setItemSize("xs")} className="item_size_container" style={{ border: itemSize === "xs" ? '1px solid black': 'none'}}>
                                     <label className="item_size_label" htmlFor="">XS</label>
                                     <input onChange={handleChange} type="radio" name="item-size" value="XS" className="item_size" checked={itemSize === 0}/>
                                 </div>
-                                <div onClick={() => handleClick("s")} className="item_size_container" style={{ border: itemSize === "s" ? '1px solid black': 'none'}}>
+                                <div onClick={() => setItemSize("s")} className="item_size_container" style={{ border: itemSize === "s" ? '1px solid black': 'none'}}>
                                     <label className="item_size_label" htmlFor="">S</label>
                                     <input onChange={handleChange} type="radio" name="item-size" value="S" className="item_size" checked={itemSize === 1}/>
                                 </div>
-                                <div onClick={() => handleClick("m")} className="item_size_container" style={{ border: itemSize === "m" ? '1px solid black': 'none'}}>
+                                <div onClick={() => setItemSize("m")} className="item_size_container" style={{ border: itemSize === "m" ? '1px solid black': 'none'}}>
                                     <label className="item_size_label" htmlFor="">M</label>
                                     <input onChange={handleChange} type="radio" name="item-size" value="M" className="item_size" checked={itemSize === 2}/>
                                 </div>
-                                <div onClick={() => handleClick("l")} className="item_size_container" style={{ border: itemSize === "l" ? '1px solid black': 'none'}}>
+                                <div onClick={() => setItemSize("l")} className="item_size_container" style={{ border: itemSize === "l" ? '1px solid black': 'none'}}>
                                     <label className="item_size_label" htmlFor="">L</label>
                                     <input onChange={handleChange} type="radio" name="item-size" value="L" className="item_size" checked={itemSize === 3}/>
                                 </div>
-                                <div onClick={() => handleClick("xl")} className="item_size_container" style={{ border: itemSize === "xl" ? '1px solid black': 'none'}}>
+                                <div onClick={() => setItemSize("xl")} className="item_size_container" style={{ border: itemSize === "xl" ? '1px solid black': 'none'}}>
                                     <label className="item_size_label" htmlFor="">XL</label>
                                     <input onChange={handleChange} type="radio" name="item-size" value="XL" className="item_size" checked={itemSize === 4}/>
                                 </div>
