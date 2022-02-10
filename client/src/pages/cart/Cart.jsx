@@ -8,6 +8,7 @@ import CartItem from '../../components/cartItem/CartItem';
 export default function Cart() {
 
     const cart = useSelector(state => state.cart);
+    console.log(cart);
 
     return (
         <>

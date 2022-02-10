@@ -4,14 +4,16 @@ import Footer from '../../components/footer/Footer';
 import Header from '../../components/header/Header';
 import { products } from '../../data';
 import "./itemDetail.css";
-import { add_to_cart } from '../../actions/cart';
-import { useDispatch } from 'react-redux';
+import { add_quantity, add_to_cart } from '../../actions/cart';
+import { useDispatch, useSelector } from 'react-redux';
 
 export default function ItemDetail() {
 
     const id = useParams().id;
     const item = products.find(p => p.id === parseInt(id));
     const dispatch = useDispatch();
+
+    const cart = useSelector(state => state.cart);
 
     const [itemSize, setItemSize] = useState("xs");
 
@@ -21,6 +23,29 @@ export default function ItemDetail() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+    }
+
+    const handleClick = () => {
+        if(cart.find(i => i.size === itemSize)) {
+            
+        dispatch(add_quantity({
+            id: item.id,
+            name: item.name,
+            price: item.price,
+            size: itemSize,
+            quantity: 1,
+            img: item.img,
+        }));
+        } else {
+            dispatch(add_to_cart({
+                id: item.id,
+                name: item.name,
+                price: item.price,
+                size: itemSize,
+                quantity: 1,
+                img: item.img,
+            }))
+        }
     }
 
     return (
@@ -57,14 +82,15 @@ export default function ItemDetail() {
                                     <input onChange={handleChange} type="radio" name="item-size" value="XL" className="item_size" checked={itemSize === 4}/>
                                 </div>
                             </div>
-                            <button onClick={() => dispatch(add_to_cart({
+                            {/* <button onClick={() => dispatch(add_to_cart({
                                 id: item.id,
                                 name: item.name,
                                 price: item.price,
                                 size: itemSize,
                                 quantity: 1,
                                 img: item.img,
-                            }))} className="item_add">ADD TO CART</button>
+                            }))} className="item_add">ADD TO CART</button> */}
+                            <button onClick={handleClick} className="item_add">ADD TO CART</button>
                             <div className="item_desc">
                                 <p>PRE-ORDER SALE</p>
                                 <p>REGULAR FIT</p>

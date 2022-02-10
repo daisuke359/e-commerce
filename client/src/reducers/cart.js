@@ -25,6 +25,10 @@ const cartReducer = (state = INITIAL_STATE, action) => {
             return state;
         case 'REMOVE_ITEM': 
             return state.filter(item => item !== action.payload);
+        case "ADD_QUANTITY":
+            const index = state.findIndex(obj => obj.id === action.payload.id && obj.size === action.payload.size);
+            state[index].quantity += 1;
+            return state;
         default:
             return state;
     }

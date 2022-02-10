@@ -11,3 +11,10 @@ export const remove_from_cart = (item) => {
         payload: item,
     }
 }
+
+export const add_quantity = (item) => {
+    return {
+        type: "ADD_QUANTITY",
+        payload: item,
+    }
+}
